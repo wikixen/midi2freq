@@ -46,14 +46,5 @@ int main(int argc, char *argv[])
   // Calculation of frequency for provided MIDI note
   double frequency = a4 * pow(2, (midinote - 69.0) / octaveDiv);
 
-  // Exercise 1.2.5 PG.77
-  // // Only works for MIDI note 60-72 ie one octave
-  // double c0_length, c5_length, length_interval;
-  // c0_length = 660; // Length of MIDI note 0
-  // c5_length = 330; // Length og MIDI note for middle C, 60 in this case
-  // length_interval = (c0_length - c5_length) / 12;
-
-  // double midinote_length = 330+((midinote%12) * length_interval);
-
   printf("MIDI note: %d has a frequency of %.2f\n", midinote, frequency);
 }
